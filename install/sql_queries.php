@@ -56,7 +56,7 @@ $SQL[] = "CREATE TABLE `". $db_prefix ."asessions` (
   `s_uname` varchar(255) NOT NULL,
   `s_location` varchar(255) NOT NULL,
   `s_inticket` int(11) NOT NULL DEFAULT '0',
-  `s_messages` text NOT NULL,
+  `s_messages` text NULL,
   `s_time` int(10) NOT NULL DEFAULT '0',
   `s_ipadd` varchar(32) NOT NULL,
   PRIMARY KEY (`s_id`)
@@ -331,7 +331,7 @@ $SQL[] = "CREATE TABLE `". $db_prefix ."sessions` (
   `s_uname` varchar(255) NOT NULL,
   `s_email` varchar(255) NOT NULL,
   `s_location` text NOT NULL,
-  `s_tkey` varchar(255) NOT NULL,
+  `s_tkey` varchar(255) NULL,
   `s_guest` tinyint(1) NOT NULL DEFAULT '0',
   `s_time` int(10) NOT NULL DEFAULT '0',
   `s_ipadd` varchar(32) NOT NULL,

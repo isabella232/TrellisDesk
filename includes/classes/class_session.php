@@ -216,6 +216,7 @@ class td_class_session {
                               's_id'            => $new_session,
                               's_uid'            => $this->user['id'],
                               's_uname'            => $this->user['name'],
+                              's_email'            => $this->user['email'],
                               's_ipadd'            => $this->trellis->input['ip_address'],
                               's_location'        => $this->trellis->input['act'],
                               's_time'            => time(),
